@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=3">
+  <link rel="stylesheet" href="../assets/style.css?v=6">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -104,13 +104,27 @@
 
     <article class="card">
       <div class="label"><span class="pill">2025 – 2026</span><span>Université Tongji</span><span>Projet de recherche</span></div>
-      <h4>Réception de paquets 5G dans un train à grande vitesse</h4>
+      <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg></span>Réception de paquets 5G dans un train à grande vitesse</h4>
       <p class="summary">Une simulation MATLAB de la réception de paquets de données sur un lien 5G à bord d'un train à grande vitesse.</p>
       <details>
         <summary>En savoir plus</summary>
         <p>Réalisé pendant mon échange à Shanghai, dans le cadre de ma spécialisation en <strong>théorie de l'information et systèmes de communication mobiles</strong>. La simulation étudie l'effet de la <strong>forte mobilité (effet Doppler, canal qui varie rapidement)</strong> sur la réception des paquets, et le rôle des mécanismes de retransmission comme le <strong>HARQ</strong> pour fiabiliser le lien.</p>
       </details>
       <ul class="tags"><li>MATLAB</li><li>5G</li><li>HARQ</li><li>Communications mobiles</li></ul>
+    </article>
+
+    <article class="card">
+      <div class="label"><span class="pill">2025</span><span>INSA Lyon</span><span>Projet d'équipe</span></div>
+      <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg></span>Analyse énergétique réseau d'un smartphone</h4>
+      <p class="summary">Combien d'énergie un téléphone dépense-t-il vraiment pour TikTok, le streaming ou un appel, et quelle part revient à la radio cellulaire ? Nous y avons répondu en mesurant de vrais téléphones en usage réel, puis en transformant les résultats en simulateur web.</p>
+      <details>
+        <summary>En savoir plus</summary>
+        <p>Nous avons mesuré la puissance consommée par les téléphones en usage réel, en séparant la <strong>partie radio</strong> du reste de l'appareil. Les scénarios couvraient les vidéos courtes, le streaming et les appels voix/visio en <strong>3G, LTE et 5G</strong>, à l'arrêt et à bord du tram à Lyon.</p>
+        <p>Ma partie : le <strong>traitement d'enregistrements de plusieurs millions de lignes en Python</strong> (traitement par blocs, graphiques Plotly interactifs) et l'<strong>analyse comparative</strong> application × réseau × mobilité. Faire défiler des vidéos courtes coûte environ <strong>0,04–0,06 Wh par minute</strong> (~3 Wh par heure) ; aucun réseau n'est systématiquement plus sobre et la mobilité n'a pas d'effet net, avec seulement 1 à 3 sessions par configuration : ce sont des tendances, pas des preuves.</p>
+        <p>Les résultats alimentent un <strong>simulateur web</strong> (Node.js/Express) qui estime l'énergie, le pourcentage de batterie et le CO₂ d'une journée d'usage. J'y ai ajouté les caractéristiques des batteries et des corrections du front-end.</p>
+      </details>
+      <ul class="tags"><li>Python</li><li>Plotly</li><li>Mesure d'énergie</li><li>3G / LTE / 5G</li><li>Node.js</li></ul>
+      <div class="links"><a href="https://github.com/daniel-cury/SIR" target="_blank" rel="noopener">Voir le code sur GitHub →</a></div>
     </article>
 
     <article class="card">
@@ -133,17 +147,6 @@
         <p>Un exercice en équipe proche du métier de consultant : <strong>analyse du besoin client</strong>, conception d'une solution technique, chiffrage, puis <strong>rédaction et soutenance de la proposition</strong>.</p>
       </details>
       <ul class="tags"><li>Avant-vente</li><li>Conception de solution</li><li>Travail en équipe</li></ul>
-    </article>
-
-    <article class="card">
-      <div class="label"><span class="pill">INSA Lyon</span><span>Projet académique</span></div>
-      <h4>Analyse énergétique réseau d'un smartphone</h4>
-      <p class="summary">Mesurer et analyser l'énergie consommée par un téléphone pour son activité réseau.</p>
-      <details>
-        <summary>En savoir plus</summary>
-        <p>Nous avons étudié le <strong>coût énergétique de l'usage réseau d'un téléphone</strong> selon différentes conditions et profils de trafic, puis traduit les mesures en recommandations concrètes.</p>
-      </details>
-      <ul class="tags"><li>Réseaux mobiles</li><li>Énergie</li><li>Analyse de données</li></ul>
     </article>
 
     <article class="card">

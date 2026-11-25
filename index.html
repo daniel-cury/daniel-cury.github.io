@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=3">
+  <link rel="stylesheet" href="assets/style.css?v=6">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -105,13 +105,27 @@
 
     <article class="card">
       <div class="label"><span class="pill">2025 – 2026</span><span>Tongji University</span><span>Research project</span></div>
-      <h4>5G Packet Reception on a High-Speed Train</h4>
+      <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg></span>5G Packet Reception on a High-Speed Train</h4>
       <p class="summary">A MATLAB simulation of how data packets are received by a 5G link on a train moving at high speed.</p>
       <details>
         <summary>Read more</summary>
         <p>Carried out during my exchange in Shanghai, as part of my specialisation in <strong>information theory and mobile communication systems</strong>. The simulation looks at how <strong>high mobility (Doppler, fast-changing channels)</strong> affects packet reception, and at how retransmission mechanisms such as <strong>HARQ</strong> help keep the link reliable.</p>
       </details>
       <ul class="tags"><li>MATLAB</li><li>5G</li><li>HARQ</li><li>Mobile communications</li></ul>
+    </article>
+
+    <article class="card">
+      <div class="label"><span class="pill">2025</span><span>INSA Lyon</span><span>Team project</span></div>
+      <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg></span>Network Energy Analysis of a Smartphone</h4>
+      <p class="summary">How much energy does a phone really spend on TikTok, streaming or a call, and how much of it goes to the cellular radio? We answered it by measuring real phones in everyday use, then turned the results into a web simulator.</p>
+      <details>
+        <summary>Read more</summary>
+        <p>We recorded how much power the phones drew during real use, keeping the <strong>radio part</strong> apart from the rest of the device. The scenarios covered short videos, streaming and voice/video calls on <strong>3G, LTE and 5G</strong>, both standing still and on a moving tram in Lyon.</p>
+        <p>My part: processing <strong>multi-million-row recordings in Python</strong> (processed in chunks, interactive Plotly charts) and the <strong>comparative analysis</strong> of app × network × mobility. Scrolling short videos costs about <strong>0.04–0.06 Wh per minute</strong> (~3 Wh per hour); no network was consistently cheaper and mobility had no clear effect, with only 1–3 sessions per setup, so these are trends rather than proof.</p>
+        <p>The results feed a <strong>web simulator</strong> (Node.js/Express) that estimates the energy, battery percentage and CO₂ of a day of phone use. I added the device battery specs and front-end fixes.</p>
+      </details>
+      <ul class="tags"><li>Python</li><li>Plotly</li><li>Energy measurement</li><li>3G / LTE / 5G</li><li>Node.js</li></ul>
+      <div class="links"><a href="https://github.com/daniel-cury/SIR" target="_blank" rel="noopener">See the code on GitHub →</a></div>
     </article>
 
     <article class="card">
@@ -134,17 +148,6 @@
         <p>A team exercise close to consulting work: <strong>analysing the client's needs</strong>, designing a technical solution, estimating costs and <strong>writing and presenting a proposal</strong>.</p>
       </details>
       <ul class="tags"><li>Pre-sales</li><li>Solution design</li><li>Teamwork</li></ul>
-    </article>
-
-    <article class="card">
-      <div class="label"><span class="pill">INSA Lyon</span><span>Academic project</span></div>
-      <h4>Network Energy Analysis of a Smartphone</h4>
-      <p class="summary">Measuring and analysing how much energy a phone spends on network activity.</p>
-      <details>
-        <summary>Read more</summary>
-        <p>We studied the <strong>energy cost of a phone's network usage</strong> under different conditions and traffic profiles, then turned the measurements into practical recommendations.</p>
-      </details>
-      <ul class="tags"><li>Mobile networks</li><li>Energy</li><li>Data analysis</li></ul>
     </article>
 
     <article class="card">
