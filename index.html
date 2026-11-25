@@ -129,14 +129,17 @@
     </article>
 
     <article class="card">
-      <div class="label"><span class="pill">INSA Lyon</span><span>Academic project</span></div>
-      <h4>Facial Expression Recognition with AI</h4>
-      <p class="summary">A machine-learning model that classifies human facial expressions from images.</p>
+      <div class="label"><span class="pill">2025</span><span>INSA Lyon</span><span>Team project</span></div>
+      <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96l-6.14 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span>Facial Expression Recognition with AI</h4>
+      <p class="summary">A small neural network that reads 7 facial expressions (happy, sad, surprise…) live from a webcam, and a hands-on lesson in how much an AI model depends on its data.</p>
       <details>
         <summary>Read more</summary>
-        <p>Trained and evaluated a <strong>computer-vision model in Python</strong> to recognise facial expressions. The project covered the whole pipeline: <strong>data preparation, training, evaluation</strong> and analysis of the model's errors.</p>
+        <p>OpenCV finds the face in the image, crops it to 48×48 grayscale, and a <strong>convolutional neural network built with TensorFlow / Keras</strong> gives a probability for each expression. It reaches <strong>56.8 % accuracy</strong> on the FER2013 test set (humans score around 65 %): very good on <em>happy</em>, <em>neutral</em> and <em>surprise</em>, much weaker on <em>disgust</em> and <em>fear</em>.</p>
+        <p>A large part of the work was on the <strong>data</strong>: the <em>disgust</em> class had ~400 training images against ~7,000 for <em>happy</em>, so we enriched it with augmentation (contrast and brightness variations). We also photographed ourselves making each expression to test and enrich the model.</p>
+        <p>Overall, I learned to <strong>build, train and evaluate models with TensorFlow</strong>, to evaluate them with key AI concepts like <strong>accuracy</strong> and the <strong>confusion matrix</strong>, and above all that <strong>a model is only as good as its data</strong>: faces that look different from the training set, or rare classes, stay poorly recognised however the model is tuned.</p>
       </details>
-      <ul class="tags"><li>Python</li><li>Machine learning</li><li>Computer vision</li></ul>
+      <ul class="tags"><li>Python</li><li>TensorFlow / Keras</li><li>Neural networks</li><li>AI models</li><li>Data augmentation</li></ul>
+      <div class="links"><a href="https://github.com/daniel-cury/facial-expression-recognition" target="_blank" rel="noopener">See the code on GitHub →</a></div>
     </article>
 
     <article class="card">
@@ -148,13 +151,6 @@
         <p>A team exercise close to consulting work: <strong>analysing the client's needs</strong>, designing a technical solution, estimating costs and <strong>writing and presenting a proposal</strong>.</p>
       </details>
       <ul class="tags"><li>Pre-sales</li><li>Solution design</li><li>Teamwork</li></ul>
-    </article>
-
-    <article class="card">
-      <div class="label"><span class="pill">INSA Lyon</span><span>Academic project</span></div>
-      <h4>Website Front-End</h4>
-      <p class="summary">Built the front-end of a website as part of a web development team project.</p>
-      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
     </article>
   </section>
 
@@ -204,7 +200,7 @@
         <p class="place">Lyon, France · Work-study with EDF (2023 – 2026)</p>
         <ul class="points">
           <li>Integrated preparatory programme, <strong>AMERINSA international track</strong> (2020 – 2023).</li>
-          <li>Projects: call for tenders, smartphone network energy analysis, facial expression recognition AI, website front-end.</li>
+          <li>Projects: call for tenders, smartphone network energy analysis, facial expression recognition AI.</li>
         </ul>
         <p class="activities"><strong>Activities:</strong> Elected student, Campus Life Council (2025 – 26)</p>
         <div class="links"><a href="https://lnkd.in/p/dhd4Z_J3" target="_blank" rel="noopener">LinkedIn post →</a></div>

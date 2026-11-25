@@ -128,14 +128,17 @@
     </article>
 
     <article class="card">
-      <div class="label"><span class="pill">INSA Lyon</span><span>Projet académique</span></div>
-      <h4>Reconnaissance d'expressions faciales par IA</h4>
-      <p class="summary">Un modèle d'apprentissage automatique qui classe les expressions du visage à partir d'images.</p>
+      <div class="label"><span class="pill">2025</span><span>INSA Lyon</span><span>Projet d'équipe</span></div>
+      <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96l-6.14 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span>Reconnaissance d'expressions faciales par IA</h4>
+      <p class="summary">Un petit réseau de neurones qui reconnaît 7 expressions du visage (joie, tristesse, surprise…) en direct depuis une webcam, et une leçon concrète sur la dépendance d'un modèle d'IA à ses données.</p>
       <details>
         <summary>En savoir plus</summary>
-        <p>Entraînement et évaluation d'un <strong>modèle de vision par ordinateur en Python</strong> pour reconnaître les expressions faciales. Le projet a couvert toute la chaîne : <strong>préparation des données, entraînement, évaluation</strong> et analyse des erreurs du modèle.</p>
+        <p>OpenCV détecte le visage, le recadre en 48×48 en niveaux de gris, puis un <strong>réseau de neurones convolutif construit avec TensorFlow / Keras</strong> donne une probabilité pour chaque expression. Il atteint <strong>56,8 % de précision</strong> (accuracy) sur le jeu de test FER2013 (les humains font environ 65 %) : très bon sur la <em>joie</em>, le <em>neutre</em> et la <em>surprise</em>, bien plus faible sur le <em>dégoût</em> et la <em>peur</em>.</p>
+        <p>Une grande partie du travail a porté sur les <strong>données</strong> : la classe <em>dégoût</em> comptait ~400 images d'entraînement contre ~7 000 pour la <em>joie</em>, nous l'avons donc enrichie par augmentation (variations de contraste et de luminosité). Nous nous sommes aussi photographiés en train de faire chaque expression pour tester et enrichir le modèle.</p>
+        <p>Au final, j'ai appris à <strong>créer, entraîner et évaluer des modèles avec TensorFlow</strong>, à les évaluer avec des notions clés de l'IA comme l'<strong>accuracy</strong> et la <strong>matrice de confusion</strong>, et surtout qu'<strong>un modèle ne vaut que par ses données</strong> : des visages différents de ceux de l'entraînement, ou des classes rares, restent mal reconnus quels que soient les réglages du modèle.</p>
       </details>
-      <ul class="tags"><li>Python</li><li>Machine learning</li><li>Vision par ordinateur</li></ul>
+      <ul class="tags"><li>Python</li><li>TensorFlow / Keras</li><li>Réseaux de neurones</li><li>Modèles d'IA</li><li>Augmentation de données</li></ul>
+      <div class="links"><a href="https://github.com/daniel-cury/facial-expression-recognition" target="_blank" rel="noopener">Voir le code sur GitHub →</a></div>
     </article>
 
     <article class="card">
@@ -147,13 +150,6 @@
         <p>Un exercice en équipe proche du métier de consultant : <strong>analyse du besoin client</strong>, conception d'une solution technique, chiffrage, puis <strong>rédaction et soutenance de la proposition</strong>.</p>
       </details>
       <ul class="tags"><li>Avant-vente</li><li>Conception de solution</li><li>Travail en équipe</li></ul>
-    </article>
-
-    <article class="card">
-      <div class="label"><span class="pill">INSA Lyon</span><span>Projet académique</span></div>
-      <h4>Front-end d'un site web</h4>
-      <p class="summary">Développement du front-end d'un site dans le cadre d'un projet web en équipe.</p>
-      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
     </article>
   </section>
 
@@ -203,7 +199,7 @@
         <p class="place">Lyon, France · En alternance chez EDF (2023 – 2026)</p>
         <ul class="points">
           <li>Classes préparatoires intégrées, <strong>filière internationale AMERINSA</strong> (2020 – 2023).</li>
-          <li>Projets : appel d'offres, analyse énergétique réseau d'un téléphone, IA de reconnaissance d'expressions faciales, front-end d'un site web.</li>
+          <li>Projets : appel d'offres, analyse énergétique réseau d'un téléphone, IA de reconnaissance d'expressions faciales.</li>
         </ul>
         <p class="activities"><strong>Engagement :</strong> Élu étudiant au Conseil de vie du campus (2025 – 26)</p>
         <div class="links"><a href="https://lnkd.in/p/dhd4Z_J3" target="_blank" rel="noopener">Post LinkedIn →</a></div>
