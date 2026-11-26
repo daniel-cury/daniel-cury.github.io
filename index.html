@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=6">
+  <link rel="stylesheet" href="assets/style.css?v=11">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -63,7 +63,7 @@
   <section id="now">
     <h2>Now</h2>
     <ul class="now">
-      <li><span class="when">Looking for</span><span><strong>A full-time position in IT consulting</strong>, ideally on telecom, network or IT service-management transformation projects. Open to France and the rest of Europe.</span></li>
+      <li><span class="when">Looking for</span><span><strong>A full-time position in IT consulting</strong>, ideally on telecom or IT service management projects, in a strategic or operational role with client contact, bridging technical and business teams. Preferably in France or Norway, and open to relocating.</span></li>
       <li><span class="when">2026</span><span><strong>Graduated from INSA Lyon</strong> in Telecommunications Engineering, after finishing my apprenticeship at EDF late September.</span></li>
       <li><span class="when">Side projects</span><span>Running a home server and building a training web app with friends to keep my hands on infrastructure and code. I also build websites (including freelance work) to practice web development.</span></li>
     </ul>
@@ -78,27 +78,27 @@
     <article class="card">
       <div class="label"><span class="pill">Since 2026</span><span>Personal project</span></div>
       <h4>Self-hosted Home Server</h4>
-      <p class="summary">A small home lab where I host my own services and practice Linux and network administration.</p>
+      <p class="summary">A home lab running on an old recycled computer: my private cloud, and my way of gradually cancelling Big Tech subscriptions.</p>
       <details>
         <summary>Read more</summary>
-        <!-- TODO: adjust to what you actually run (services, hardware, start date) -->
-        <p>I set up and maintain a <strong>Linux server at home</strong> that runs <strong>containerised services with Docker</strong>. It's a hands-on way to keep practicing what I used at work: <strong>networking, monitoring, backups and security hardening</strong>, on infrastructure I am fully responsible for.</p>
-        <p>The main goal was to use Brazilian services while in France without paying for a VPN. It then became a full attack on Big Tech: the goal is to be self-sufficient in most of my digital needs.</p>
+        <p>The server runs on an <strong>old family computer</strong> with external drives for storage, under <strong>Debian 13</strong>, administered <strong>only over SSH</strong>. Its services run in <strong>Docker containers</strong> managed with <strong>Portainer</strong>: <strong>Jellyfin</strong> for media streaming, <strong>WireGuard (wg-easy)</strong> and <strong>Tailscale</strong> for VPN and remote access, and a few others.</p>
+        <p>The first goal was to use Brazilian services while in France without paying for a VPN: done, I no longer pay for one. It then became a broader move away from Big Tech, with the aim of being self-sufficient for most of my digital needs.</p>
+        <p>It's a hands-on way to keep practising <strong>Linux administration, networking, backups and security</strong> on infrastructure I am fully responsible for. The internet connection at the server's location dropped a few times during installation: a good lesson in planning changes on a remote machine.</p>
       </details>
-      <ul class="tags"><li>Linux</li><li>Docker</li><li>Networking</li><li>Self-hosting</li></ul>
+      <ul class="tags"><li>Linux (Debian)</li><li>Docker</li><li>Networking</li><li>VPN</li><li>Self-hosting</li></ul>
     </article>
 
     <article class="card">
       <div class="label"><span class="pill">Since 2026</span><span>Team project</span></div>
       <h4>Training Web App with Friends</h4>
-      <p class="summary">A website we're building together to plan and track our workouts.</p>
+      <p class="summary">A website for my training group to plan and track our workouts, with a small card game and stats from past seasons.</p>
       <details>
         <summary>Read more</summary>
-        <!-- TODO: describe the real features and stack -->
-        <p>A small team project, built by and for a group of friends who train together. Beyond the code, it's a way to practise <strong>working in a team</strong>: splitting the work, reviewing each other's changes and shipping small iterations.</p>
+        <p>The group has existed since <strong>2021</strong>: friends who push each other to train regularly. Years of it have taught me a lot about <strong>motivation, consistency and resilience</strong>. In 2026 we gave it its own website, built with plain <strong>HTML, CSS and JavaScript</strong>.</p>
+        <p>Beyond tracking workouts, the site includes a small <strong>card game</strong> I designed and developed, and a <strong>data analysis</strong> section on past seasons. It mixes web development, a bit of data analysis and a good dose of <strong>creativity</strong>.</p>
         <p>We also build it with <strong>generative AI</strong> tools: writing precise prompts (<strong>prompt engineering</strong>), then reviewing and testing the generated code before adding it to the project.</p>
       </details>
-      <ul class="tags"><li>Web</li><li>HTML/CSS</li><li>Generative AI</li><li>Prompt engineering</li><li>Teamwork</li></ul>
+      <ul class="tags"><li>HTML / CSS / JavaScript</li><li>Game development</li><li>Data analysis</li><li>Generative AI</li><li>Prompt engineering</li></ul>
       <!-- <div class="links"><a href="#">See the code →</a></div> -->
     </article>
 
@@ -216,12 +216,12 @@
       <li>
         <div class="date">Sep. 2020 – 2026</div>
         <h4><img class="logo" src="assets/logos/insa.png" alt="INSA Lyon logo">Telecommunications Engineering (Master's level) <span class="org">· INSA Lyon</span></h4>
-        <p class="place">Lyon, France · Work-study with EDF (2023 – 2026)</p>
+        <p class="place">Lyon, France</p>
         <ul class="points">
           <li>Integrated preparatory programme, <strong>AMERINSA international track</strong> (2020 – 2023).</li>
-          <li>Projects: call for tenders, smartphone network energy analysis, facial expression recognition AI.</li>
+          <li>Master's in <strong>Telecommunications Engineering</strong>, work-study with <strong>EDF</strong> (2023 – 2026).</li>
         </ul>
-        <p class="activities"><strong>Activities:</strong> Elected student, Campus Life Council (2025 – 26)</p>
+        <ul class="tags"><li>Work-study balance</li><li>Emotional intelligence</li><li>Multicultural environment</li><li>Resilience</li></ul>
         <div class="links"><a href="https://lnkd.in/p/dhd4Z_J3" target="_blank" rel="noopener">LinkedIn post →</a></div>
       </li>
       <li>
@@ -230,8 +230,9 @@
         <p class="place">Shanghai, China</p>
         <ul class="points">
           <li>Specialisation in <strong>information theory</strong> and <strong>mobile communication systems</strong>.</li>
-          <li>Research project: MATLAB simulation of 5G packet reception on a high-speed train.</li>
+          <li>Research projects in <strong>5G</strong> and <strong>information theory</strong>.</li>
         </ul>
+        <ul class="tags"><li>International adaptability</li><li>Cultural immersion</li><li>Networking</li><li>Autonomy</li><li>Open-mindedness</li></ul>
         <div class="links"><a href="https://lnkd.in/p/dzSNV_Au" target="_blank" rel="noopener">LinkedIn post →</a></div>
       </li>
       <li>
@@ -257,12 +258,15 @@
     </ul>
 
     <h3 class="sub">Outside Work</h3>
-    <ul class="plain">
-      <li><strong>Sport:</strong> running (multiple half-marathons), basketball and football.</li>
-      <li><strong>Travel:</strong> 30+ countries visited, and I've lived on three continents.</li>
-      <li><strong>Self-hosting:</strong> my home server is my playground for infrastructure.</li>
-      <li><strong>Curiosity:</strong> economics, geopolitics, personal finances, <a href="https://daniel-cury.github.io/bibliotecury/" target="_blank" rel="noopener">books</a>, films and board games.</li>
-    </ul>
+    <p class="aside">My ideal day off (a.k.a. my interests), more or less:</p>
+    <ol class="day">
+      <li><time>07:00</time><span>Long run, training for the next <strong>half-marathon</strong> (honestly, a bit early for an ideal day).</span></li>
+      <li><time>10:00</time><span>Basketball or football with friends.</span></li>
+      <li><time>13:00</time><span>Planning the next trip: <strong>30+ countries</strong> so far, and three continents lived on.</span></li>
+      <li><time>15:00</time><span>Reading up on economics, geopolitics or personal finances (maybe a bit nerdy for an ideal day).</span></li>
+      <li><time>17:00</time><span>Working on my home server so I can stop paying for cloud (self-hosting), or hunting for a good restaurant for dinner.</span></li>
+      <li><time>20:00</time><span>A film, a <a href="https://daniel-cury.github.io/bibliotecury/" target="_blank" rel="noopener">book</a> or a board game.</span></li>
+    </ol>
 
     <div class="grid-2">
       <div>

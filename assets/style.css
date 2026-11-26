@@ -379,6 +379,22 @@ details p { margin: 8px 0 4px; color: var(--text); }
 .skills dt:first-child { margin-top: 0; }
 .skills dd { margin: 2px 0 0; color: var(--muted); font-size: 0.93rem; }
 
+/* Outside work: an ideal day off, hour by hour */
+.aside { margin: 0 0 8px; color: var(--muted); font-size: 0.9rem; font-style: italic; }
+.day { list-style: none; margin: 0; padding: 0; }
+.day li {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 14px;
+  padding: 5px 0;
+}
+.day time {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--accent);
+  padding-top: 2px;
+}
+
 /* ===== Footer ===== */
 footer {
   margin-top: 48px;

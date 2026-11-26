@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=6">
+  <link rel="stylesheet" href="../assets/style.css?v=11">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -63,7 +63,7 @@
   <section id="now">
     <h2>En ce moment</h2>
     <ul class="now">
-      <li><span class="when">Je recherche</span><span><strong>Un CDI en conseil IT</strong>, idéalement sur des projets de transformation télécom, réseau ou de gestion des services IT. Ouvert à la France et au reste de l'Europe.</span></li>
+      <li><span class="when">Je recherche</span><span><strong>Un CDI en conseil IT</strong>, idéalement sur des projets télécom ou de gestion des services IT, dans un rôle stratégique ou opérationnel au contact du client, à l'interface entre les équipes techniques et commerciales. De préférence en France ou en Norvège, et mobile géographiquement.</span></li>
       <li><span class="when">2026</span><span><strong>Diplômé de l'INSA Lyon</strong> en télécommunications, après la fin de mon alternance chez EDF fin septembre.</span></li>
       <li><span class="when">Projets perso</span><span>J'administre un serveur maison et je développe une application web d'entraînement avec des amis, pour garder la main sur l'infrastructure et le code. Je code aussi différents sites web (y compris en freelance) pour pratiquer le développement web.</span></li>
     </ul>
@@ -78,27 +78,27 @@
     <article class="card">
       <div class="label"><span class="pill">Depuis 2026</span><span>Projet personnel</span></div>
       <h4>Serveur maison auto-hébergé</h4>
-      <p class="summary">Un petit home lab où j'héberge mes propres services et pratique l'administration Linux et réseau.</p>
+      <p class="summary">Un home lab sur un vieil ordinateur recyclé : mon cloud privé, et ma façon de résilier peu à peu mes abonnements aux Big Tech.</p>
       <details>
         <summary>En savoir plus</summary>
-        <!-- TODO : adapter à ce que vous faites tourner réellement -->
-        <p>J'ai installé et je maintiens un <strong>serveur Linux à la maison</strong> qui fait tourner des <strong>services conteneurisés avec Docker</strong>. C'est une façon concrète de continuer à pratiquer ce que j'utilisais en entreprise : <strong>réseau, supervision, sauvegardes et sécurisation</strong>, sur une infrastructure dont je suis entièrement responsable.</p>
-        <p>L'objectif de départ était d'accéder aux services brésiliens depuis la France sans payer d'abonnement VPN. C'est ensuite devenu une vraie démarche pour me passer des Big Tech : l'objectif est d'être autonome pour la plupart de mes besoins numériques.</p>
+        <p>Le serveur tourne sur un <strong>ancien ordinateur familial</strong> avec des disques externes pour le stockage, sous <strong>Debian 13</strong>, administré <strong>uniquement en SSH</strong>. Ses services tournent dans des <strong>conteneurs Docker</strong> gérés avec <strong>Portainer</strong> : <strong>Jellyfin</strong> pour le streaming multimédia, <strong>WireGuard (wg-easy)</strong> et <strong>Tailscale</strong> pour le VPN et l'accès à distance, et quelques autres.</p>
+        <p>L'objectif de départ était d'accéder aux services brésiliens depuis la France sans payer d'abonnement VPN : c'est chose faite, je n'en paie plus. C'est ensuite devenu une démarche plus large pour me passer des Big Tech, avec l'objectif d'être autonome pour la plupart de mes besoins numériques.</p>
+        <p>C'est une façon concrète de continuer à pratiquer l'<strong>administration Linux, le réseau, les sauvegardes et la sécurisation</strong> sur une infrastructure dont je suis entièrement responsable. La connexion internet du lieu où se trouve le serveur a coupé plusieurs fois pendant l'installation : une bonne leçon sur la préparation des interventions à distance.</p>
       </details>
-      <ul class="tags"><li>Linux</li><li>Docker</li><li>Réseau</li><li>Auto-hébergement</li></ul>
+      <ul class="tags"><li>Linux (Debian)</li><li>Docker</li><li>Réseau</li><li>VPN</li><li>Auto-hébergement</li></ul>
     </article>
 
     <article class="card">
       <div class="label"><span class="pill">Depuis 2026</span><span>Projet en équipe</span></div>
       <h4>Application web d'entraînement entre amis</h4>
-      <p class="summary">Un site que nous construisons ensemble pour planifier et suivre nos entraînements.</p>
+      <p class="summary">Un site pour mon groupe d'entraînement, pour planifier et suivre nos séances, avec un petit jeu de cartes et des statistiques des saisons passées.</p>
       <details>
         <summary>En savoir plus</summary>
-        <!-- TODO : décrire les vraies fonctionnalités et la stack -->
-        <p>Un petit projet d'équipe, conçu par et pour un groupe d'amis qui s'entraînent ensemble. Au-delà du code, c'est l'occasion de pratiquer le <strong>travail en équipe</strong> : répartir les tâches, relire les modifications des autres et livrer par petites itérations.</p>
+        <p>Le groupe existe depuis <strong>2021</strong> : des amis qui se motivent mutuellement à s'entraîner régulièrement. Ces années m'ont beaucoup appris sur la <strong>motivation, la régularité et la résilience</strong>. En 2026, nous lui avons donné son propre site, développé en <strong>HTML, CSS et JavaScript</strong> natifs.</p>
+        <p>En plus du suivi des entraînements, le site propose un petit <strong>jeu de cartes</strong> que j'ai conçu et développé, et une partie d'<strong>analyse de données</strong> sur les saisons passées. Il mêle développement web, un peu d'analyse de données et une bonne dose de <strong>créativité</strong>.</p>
         <p>Nous le développons aussi avec des outils d'<strong>IA générative</strong> : rédiger des instructions précises (<strong>prompt engineering</strong>), puis relire et tester le code généré avant de l'intégrer au projet.</p>
       </details>
-      <ul class="tags"><li>Web</li><li>HTML/CSS</li><li>IA générative</li><li>Prompt engineering</li><li>Travail en équipe</li></ul>
+      <ul class="tags"><li>HTML / CSS / JavaScript</li><li>Développement de jeu</li><li>Analyse de données</li><li>IA générative</li><li>Prompt engineering</li></ul>
     </article>
 
     <h3 class="sub">Terminés</h3>
@@ -215,12 +215,12 @@
       <li>
         <div class="date">Sep. 2020 – 2026</div>
         <h4><img class="logo" src="../assets/logos/insa.png" alt="INSA Lyon logo">Ingénieur en Télécommunications <span class="org">· INSA Lyon</span></h4>
-        <p class="place">Lyon, France · En alternance chez EDF (2023 – 2026)</p>
+        <p class="place">Lyon, France</p>
         <ul class="points">
           <li>Classes préparatoires intégrées, <strong>filière internationale AMERINSA</strong> (2020 – 2023).</li>
-          <li>Projets : appel d'offres, analyse énergétique réseau d'un téléphone, IA de reconnaissance d'expressions faciales.</li>
+          <li>Cycle ingénieur (grade de master) en <strong>télécommunications</strong>, en alternance chez <strong>EDF</strong> (2023 – 2026).</li>
         </ul>
-        <p class="activities"><strong>Engagement :</strong> Élu étudiant au Conseil de vie du campus (2025 – 26)</p>
+        <ul class="tags"><li>Équilibre études-entreprise</li><li>Intelligence émotionnelle</li><li>Environnement multiculturel</li><li>Résilience</li></ul>
         <div class="links"><a href="https://lnkd.in/p/dhd4Z_J3" target="_blank" rel="noopener">Post LinkedIn →</a></div>
       </li>
       <li>
@@ -229,8 +229,9 @@
         <p class="place">Shanghai, Chine</p>
         <ul class="points">
           <li>Spécialisation en <strong>théorie de l'information</strong> et <strong>systèmes de communication mobiles</strong>.</li>
-          <li>Projet de recherche : simulation MATLAB de la réception de paquets 5G dans un train à grande vitesse.</li>
+          <li>Projets de recherche en <strong>5G</strong> et en <strong>théorie de l'information</strong>.</li>
         </ul>
+        <ul class="tags"><li>Adaptabilité internationale</li><li>Immersion culturelle</li><li>Développement de réseau</li><li>Autonomie</li><li>Ouverture d'esprit</li></ul>
         <div class="links"><a href="https://lnkd.in/p/dzSNV_Au" target="_blank" rel="noopener">Post LinkedIn →</a></div>
       </li>
       <li>
@@ -256,12 +257,15 @@
     </ul>
 
     <h3 class="sub">En dehors du travail</h3>
-    <ul class="plain">
-      <li><strong>Sport :</strong> course à pied (plusieurs semi-marathons), basket et football.</li>
-      <li><strong>Voyages :</strong> plus de 30 pays visités, et j'ai vécu sur trois continents.</li>
-      <li><strong>Auto-hébergement :</strong> mon serveur maison est mon terrain de jeu pour l'infrastructure.</li>
-      <li><strong>Curiosité :</strong> économie, géopolitique, finances personnelles, <a href="https://daniel-cury.github.io/bibliotecury/" target="_blank" rel="noopener">livres</a>, films et jeux de société.</li>
-    </ul>
+    <p class="aside">Mon jour de repos idéal (autrement dit, mes centres d'intérêt), à peu près :</p>
+    <ol class="day">
+      <li><time>07h00</time><span>Sortie longue, en vue du prochain <strong>semi-marathon</strong> (un peu tôt pour un jour idéal, à vrai dire).</span></li>
+      <li><time>10h00</time><span>Basket ou foot entre amis.</span></li>
+      <li><time>13h00</time><span>Préparer le prochain voyage : <strong>plus de 30 pays</strong> visités, et trois continents où j'ai vécu.</span></li>
+      <li><time>15h00</time><span>Me plonger dans l'économie, la géopolitique ou les finances personnelles (peut-être un peu geek pour un jour idéal).</span></li>
+      <li><time>17h00</time><span>Configurer mon serveur maison pour arrêter de payer le cloud (auto-hébergement), ou chercher un bon restaurant pour le dîner.</span></li>
+      <li><time>20h00</time><span>Un film, un <a href="https://daniel-cury.github.io/bibliotecury/" target="_blank" rel="noopener">livre</a> ou un jeu de société.</span></li>
+    </ol>
 
     <div class="grid-2">
       <div>
