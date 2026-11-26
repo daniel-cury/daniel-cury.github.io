@@ -106,12 +106,14 @@
     <article class="card">
       <div class="label"><span class="pill">2025 – 2026</span><span>Tongji University</span><span>Research project</span></div>
       <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg></span>5G Packet Reception on a High-Speed Train</h4>
-      <p class="summary">A MATLAB simulation of how data packets are received by a 5G link on a train moving at high speed.</p>
+      <p class="summary">A MATLAB tool that measures the latency of every 5G packet, built on top of a method that emulates high-speed trains without boarding one.</p>
       <details>
         <summary>Read more</summary>
-        <p>Carried out during my exchange in Shanghai, as part of my specialisation in <strong>information theory and mobile communication systems</strong>. The simulation looks at how <strong>high mobility (Doppler, fast-changing channels)</strong> affects packet reception, and at how retransmission mechanisms such as <strong>HARQ</strong> help keep the link reliable.</p>
+        <p>Carried out during my exchange in Shanghai, as part of my specialisation in <strong>information theory and mobile communication systems</strong>. Measuring on a real high-speed train is expensive, hard to repeat and easily disturbed (weather, a vehicle passing nearby…). My supervisor, José Rodríguez-Piñeiro, developed a method that <strong>emulates high speeds</strong> by interpolating the OFDM signal in time before sending it: the subcarriers get closer together, so the receiver suffers the same <strong>Doppler effects</strong> as on a fast train, while measuring at low speed.</p>
+        <p>My part was to measure <strong>packet latency</strong> in this setting, which standard MATLAB 5G examples do not provide (they focus on throughput). I studied the <strong>HARQ</strong> protocol (ACK/NACK, retransmissions, redundancy versions) and wrote a <strong>MATLAB class</strong> that plugs into MathWorks' 5G NR downlink example with only a few added lines. It follows each packet from its first transmission to its successful decoding, and records its <strong>delay</strong>, its <strong>retransmission history</strong> and the packets <strong>lost</strong> after every retry, here with a 200 Hz Doppler shift to match train conditions.</p>
+        <p>With 30 kHz subcarrier spacing (0.5 ms slots) and 16 HARQ processes, <strong>each retransmission adds about 8 ms</strong> of latency. The class is generic: it can be reused in any slot-based simulation (4G, Wi-Fi, queues…), and I wrote its documentation for future projects.</p>
       </details>
-      <ul class="tags"><li>MATLAB</li><li>5G</li><li>HARQ</li><li>Mobile communications</li></ul>
+      <ul class="tags"><li>MATLAB</li><li>5G NR</li><li>HARQ</li><li>Latency</li><li>Mobile communications</li></ul>
     </article>
 
     <article class="card">
