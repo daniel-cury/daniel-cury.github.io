@@ -115,6 +115,20 @@
     </article>
 
     <article class="card">
+      <div class="label"><span class="pill">2025 – 2026</span><span>Tongji University</span><span>Individual research project</span></div>
+      <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h2v6"/><path d="M3 9h4"/><rect x="10" y="3" width="4" height="6" rx="2"/><path d="M17 3h2v6"/><path d="M17 9h4"/><path d="M2 17q2.5-5 5 0t5 0 5 0 5 0"/></svg></span>Simulating a Digital Transmission Channel</h4>
+      <p class="summary">A Python simulation of a complete digital communication chain: handwritten digits (MNIST) are compressed, encoded, modulated and sent through a noisy channel, then a neural network checks whether they can still be recognised.</p>
+      <details>
+        <summary>Read more</summary>
+        <p>Carried out for the <strong>Information Theory and Applications</strong> course. Each image becomes a bitstream, compressed with <strong>Huffman coding</strong> (source coding), protected with a <strong>repetition code</strong> (channel coding), modulated in <strong>4-QAM</strong> and sent over a noisy channel (<strong>AWGN</strong> or binary symmetric) before being decoded and rebuilt.</p>
+        <p>Huffman brings the bit rate close to the source's entropy, but a single flipped bit can wreck a whole image (catastrophic error propagation). A <strong>CNN</strong> (99.2 % accuracy on clean images) measured the impact: at <strong>5 dB SNR</strong>, it recognises <strong>92 %</strong> of digits sent with 5 repetitions against <strong>16 %</strong> without protection. Fixed-length coding turned out more robust: always a trade-off between compression and reliability.</p>
+        <p>Along the way I learned to <strong>handle large datasets</strong> and to put into practice <strong>information theory, data compression, source and channel coding, modulation</strong> and the effect of noise on a transmission.</p>
+      </details>
+      <ul class="tags"><li>Python</li><li>Information theory</li><li>Jupyter Notebook</li><li>TensorFlow / Keras</li><li>LaTeX</li></ul>
+      <div class="links"><a href="https://github.com/daniel-cury/transmission-channel" target="_blank" rel="noopener">See the code on GitHub →</a></div>
+    </article>
+
+    <article class="card">
       <div class="label"><span class="pill">2025</span><span>INSA Lyon</span><span>Team project</span></div>
       <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg></span>Network Energy Analysis of a Smartphone</h4>
       <p class="summary">How much energy does a phone really spend on TikTok, streaming or a call, and how much of it goes to the cellular radio? We answered it by measuring real phones in everyday use, then turned the results into a web simulator.</p>
