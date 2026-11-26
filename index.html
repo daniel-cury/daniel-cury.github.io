@@ -56,7 +56,7 @@
 
   <div class="bio">
     <p>I'm a <strong>telecommunications engineer</strong> from INSA Lyon. I spent three years as an apprentice at <strong>EDF</strong>, first running <strong>critical communication networks</strong> and then leading <strong>ITIL process change</strong> in the IT division.</p>
-    <p>I now want to join <strong>IT consulting</strong> and help companies through their transformation. My work sits between complex network operations and strategic change management. I've studied and worked in Brazil, France and China, I speak four languages fluently.</p>
+    <p>I now want to join <strong>IT consulting</strong> and help companies through their transformation. My work sits between complex network operations and strategic change management. I've studied and worked in Brazil, France and China, and I speak four languages fluently.</p>
   </div>
 
   <!-- ===== Languages ===== -->
@@ -78,8 +78,8 @@
     <h2>Now</h2>
     <ul class="now">
       <li><span class="when">Looking for</span><span><strong>A full-time position in IT consulting</strong>, ideally on telecom or IT service management projects, in a strategic or operational role with client contact, bridging technical and business teams. Preferably in France or Norway, and open to relocating.</span></li>
-      <li><span class="when">2026</span><span><strong>Graduated from INSA Lyon</strong> in Telecommunications Engineering, after finishing my apprenticeship at EDF late September.</span></li>
-      <li><span class="when">Side projects</span><span>Running a home server and building a training web app with friends to keep my hands on infrastructure and code. I also build websites (including freelance work) to practice web development.</span></li>
+      <li><span class="when">2026</span><span><strong>Graduated from INSA Lyon</strong> in Telecommunications Engineering, after finishing my apprenticeship at EDF in late September.</span></li>
+      <li><span class="when">Side projects</span><span>Running a home server and building a training web app with friends to keep my hands on infrastructure and code. I also build websites (including freelance work) to practise web development.</span></li>
     </ul>
   </section>
 
@@ -138,7 +138,7 @@
       <details>
         <summary>Read more</summary>
         <p>Carried out for the <strong>Information Theory and Applications</strong> course. Each image becomes a bitstream, compressed with <strong>Huffman coding</strong> (source coding), protected with a <strong>repetition code</strong> (channel coding), modulated in <strong>4-QAM</strong> and sent over a noisy channel (<strong>AWGN</strong> or binary symmetric) before being decoded and rebuilt.</p>
-        <p>Huffman brings the bit rate close to the source's entropy, but a single flipped bit can wreck a whole image (catastrophic error propagation). A <strong>CNN</strong> (99.2 % accuracy on clean images) measured the impact: at <strong>5 dB SNR</strong>, it recognises <strong>92 %</strong> of digits sent with 5 repetitions against <strong>16 %</strong> without protection. Fixed-length coding turned out more robust: always a trade-off between compression and reliability.</p>
+        <p>Huffman brings the bit rate close to the source's entropy, but a single flipped bit can wreck a whole image (catastrophic error propagation). A <strong>CNN</strong> (99.2% accuracy on clean images) measured the impact: at <strong>5 dB SNR</strong>, it recognises <strong>92%</strong> of digits sent with 5 repetitions against <strong>16%</strong> without protection. Fixed-length coding turned out to be more robust: there is always a trade-off between compression and reliability.</p>
         <p>Along the way I learned to <strong>handle large datasets</strong> and to put into practice <strong>information theory, data compression, source and channel coding, modulation</strong> and the effect of noise on a transmission.</p>
       </details>
       <ul class="tags"><li>Python</li><li>Information theory</li><li>Jupyter Notebook</li><li>TensorFlow / Keras</li><li>LaTeX</li></ul>
@@ -148,7 +148,7 @@
     <article class="card">
       <div class="label"><span class="pill">2025</span><span>INSA Lyon</span><span>Team project</span></div>
       <h4><span class="emoji" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg></span>Network Energy Analysis of a Smartphone</h4>
-      <p class="summary">How much energy does a phone really spend on TikTok, streaming or a call, and how much of it goes to the cellular radio? We answered it by measuring real phones in everyday use, then turned the results into a web simulator.</p>
+      <p class="summary">How much energy does a phone really spend on TikTok, streaming or a call, and how much of it goes to the cellular radio? We answered this by measuring real phones in everyday use, then turning the results into a web simulator.</p>
       <details>
         <summary>Read more</summary>
         <p>We recorded how much power the phones drew during real use, keeping the <strong>radio part</strong> apart from the rest of the device. The scenarios covered short videos, streaming and voice/video calls on <strong>3G, LTE and 5G</strong>, both standing still and on a moving tram in Lyon.</p>
@@ -165,9 +165,9 @@
       <p class="summary">A small neural network that reads 7 facial expressions (happy, sad, surprise…) live from a webcam, and a hands-on lesson in how much an AI model depends on its data.</p>
       <details>
         <summary>Read more</summary>
-        <p>OpenCV finds the face in the image, crops it to 48×48 grayscale, and a <strong>convolutional neural network built with TensorFlow / Keras</strong> gives a probability for each expression. It reaches <strong>56.8 % accuracy</strong> on the FER2013 test set (humans score around 65 %): very good on <em>happy</em>, <em>neutral</em> and <em>surprise</em>, much weaker on <em>disgust</em> and <em>fear</em>.</p>
+        <p>OpenCV finds the face in the image, crops it to 48×48 greyscale, and a <strong>convolutional neural network built with TensorFlow / Keras</strong> gives a probability for each expression. It reaches <strong>56.8% accuracy</strong> on the FER2013 test set (humans score around 65%): very good on <em>happy</em>, <em>neutral</em> and <em>surprise</em>, much weaker on <em>disgust</em> and <em>fear</em>.</p>
         <p>A large part of the work was on the <strong>data</strong>: the <em>disgust</em> class had ~400 training images against ~7,000 for <em>happy</em>, so we enriched it with augmentation (contrast and brightness variations). We also photographed ourselves making each expression to test and enrich the model.</p>
-        <p>Overall, I learned to <strong>build, train and evaluate models with TensorFlow</strong>, to evaluate them with key AI concepts like <strong>accuracy</strong> and the <strong>confusion matrix</strong>, and above all that <strong>a model is only as good as its data</strong>: faces that look different from the training set, or rare classes, stay poorly recognised however the model is tuned.</p>
+        <p>Overall, I learned to <strong>build and train models with TensorFlow</strong>, to evaluate them with key AI metrics such as <strong>accuracy</strong> and the <strong>confusion matrix</strong>, and above all that <strong>a model is only as good as its data</strong>: faces that look different from the training set, or rare classes, stay poorly recognised however the model is tuned.</p>
       </details>
       <ul class="tags"><li>Python</li><li>TensorFlow / Keras</li><li>Neural networks</li><li>AI models</li><li>Data augmentation</li></ul>
       <div class="links"><a href="https://github.com/daniel-cury/facial-expression-recognition" target="_blank" rel="noopener">See the code on GitHub →</a></div>
@@ -179,8 +179,8 @@
       <p class="summary">As a team of six, we answered a realistic public call for tenders: redesigning the whole network of the Bas-Rhin département, from reading the specifications to the priced proposal and its final presentation.</p>
       <details>
         <summary>Read more</summary>
-        <p>Based on a real public tender, the Bas-Rhin département wanted to modernise the network linking all its sites: replace the old <strong>ATM loop</strong> of its metropolitan network, rebuild the <strong>LAN</strong> of its IT department and main and annex sites, connect its <strong>117 Maisons du Rhin</strong>, and add secure <strong>Wi-Fi</strong> and <strong>IP telephony</strong>. Acting as an operator with HPE Aruba as equipment supplier, we proposed an <strong>SD-WAN architecture with triple redundancy</strong> (dedicated link, MPLS tunnel over 4G, ERPS loop as backup), rolled out in four phases over about 15 months.</p>
-        <p>As <strong>business engineer</strong>, I was in charge of <strong>pricing</strong>: choosing the technical references (switches, routers, firewalls, Wi-Fi access points, IP-PBX), counting the equipment needed on each site, coordinating with the supplier and building the <strong>cost breakdown</strong>, for a total of about <strong>€1 million excluding VAT</strong> (equipment, labour, spares, training and maintenance).</p>
+        <p>Based on a real public tender, the Bas-Rhin département wanted to modernise the network linking all its sites: replace the old <strong>ATM loop</strong> of its metropolitan network, rebuild the <strong>LANs</strong> of its IT department and of its main and annex sites, connect its <strong>117 Maisons du Rhin</strong>, and add secure <strong>Wi-Fi</strong> and <strong>IP telephony</strong>. Acting as an operator with HPE Aruba as equipment supplier, we proposed an <strong>SD-WAN architecture with triple redundancy</strong> (dedicated link, MPLS tunnel over 4G, ERPS loop as backup), rolled out in four phases over about 15 months.</p>
+        <p>As the <strong>business engineer</strong>, I was in charge of <strong>pricing</strong>: choosing the technical references (switches, routers, firewalls, Wi-Fi access points, IP-PBX), counting the equipment needed on each site, coordinating with the supplier and building the <strong>cost breakdown</strong>, for a total of about <strong>€1 million excluding VAT</strong> (equipment, labour, spares, training and maintenance).</p>
         <p>Overall, I learned to <strong>read a long technical specification and turn it into client needs</strong>, to <strong>write technical documents</strong> (technical proposal, architecture and project deliverables), to <strong>work as a team with clear roles and deadlines</strong>, and to <strong>present and defend an offer</strong> in front of the client's representatives.</p>
       </details>
       <ul class="tags"><li>Pre-sales</li><li>Network architecture</li><li>Costing</li><li>Technical writing</li><li>Teamwork</li></ul>
@@ -193,7 +193,7 @@
     <ul class="timeline">
       <li>
         <div class="date">Feb. 2026 – Sep. 2026</div>
-        <h4><img class="logo" src="assets/logos/edf.png" alt="EDF logo">Process Change Management Officer <span class="org">· EDF</span></h4>
+        <h4><img class="logo" src="assets/logos/edf.png" alt="EDF logo">Change Management Officer (ITIL processes) <span class="org">· EDF</span></h4>
         <p class="place">IT Division · Lyon, France</p>
         <ul class="points">
           <li>Designed and delivered an <strong>ITIL training module</strong>: <strong>55 employees trained</strong> (25 in person, 30 online), with a rollout planned across the whole digital subsidiary (<strong>~2,000 people</strong>).</li>
@@ -208,7 +208,7 @@
         <ul class="points">
           <li>Deployment, monitoring and preventive maintenance of <strong>critical communication infrastructure</strong> (fixed and mobile) in a highly constrained industrial environment (<strong>CONNECT project</strong>).</li>
           <li>Handling complex incidents and analysing traffic with <strong>Wireshark</strong> and <strong>Spectrum</strong>.</li>
-          <li><strong>Automated</strong> operations and data-acquisition scripts in <strong>Python</strong>, which cut manual work and made diagnostics more reliable.</li>
+          <li><strong>Automated</strong> operations and data acquisition with <strong>Python</strong> scripts, cutting manual work and making diagnostics more reliable.</li>
         </ul>
       </li>
       <li>
@@ -276,9 +276,9 @@
     <ol class="day">
       <li><time>07:00</time><span>Long run, training for the next <strong>half-marathon</strong> (honestly, a bit early for an ideal day).</span></li>
       <li><time>10:00</time><span>Basketball or football with friends.</span></li>
-      <li><time>13:00</time><span>Planning the next trip: <strong>30+ countries</strong> so far, and three continents lived on.</span></li>
+      <li><time>13:00</time><span>Planning the next trip: <strong>30+ countries</strong> so far, and I've lived on three continents.</span></li>
       <li><time>15:00</time><span>Reading up on economics, geopolitics or personal finances (maybe a bit nerdy for an ideal day).</span></li>
-      <li><time>17:00</time><span>Working on my home server so I can stop paying for cloud (self-hosting), or hunting for a good restaurant for dinner.</span></li>
+      <li><time>17:00</time><span>Working on my home server so I can stop paying for cloud storage (self-hosting), or hunting for a good restaurant for dinner.</span></li>
       <li><time>20:00</time><span>A film, a <a href="https://daniel-cury.github.io/bibliotecury/" target="_blank" rel="noopener">book</a> or a board game.</span></li>
     </ol>
 
