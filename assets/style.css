@@ -170,6 +170,11 @@ strong { font-weight: 600; }
 .bio { font-size: 1.05rem; padding-top: 28px; }
 .bio p { margin: 0 0 12px; }
 
+/* Languages, shown right under the bio */
+.langs-top h3.sub { margin-top: 14px; }
+.levels.langs { gap: 6px; }
+.levels.langs li { font-size: 0.86rem; padding: 4px 5px 4px 11px; gap: 6px; }
+
 /* ===== Sections ===== */
 section { padding: 36px 0 8px; }
 
